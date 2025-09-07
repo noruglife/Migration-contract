@@ -40,4 +40,30 @@ This repository contains the **Anchor program** for the protocol.
   - The protocol periodically uses reserves to buy back and burn `$NORUG`, reducing supply.  
 
 ---
+## 📊 Protocol Workflow
 
+Below is a flowchart illustrating how the NoRug Protocol operates, including token migration, insurance, staking, claims, lottery, and buyback mechanisms.
+
+```mermaid
+graph TD
+    A[User with pump.fun Tokens] -->|Swap Tokens| B[Migration Process]
+    B -->|1:1 Ratio + 10% Bonus (First 48h)| C[$NORUG Tokens]
+    B -->|Legacy Tokens| D[PDA Burn Vault]
+    
+    C -->|Buy Insurance| E[Insurance Pool]
+    E -->|Premiums Split| F[Staking Pool]
+    E -->|Premiums Split| G[Lottery Pool]
+    E -->|Premiums Split| H[Buyback Pool]
+    
+    C -->|Stake $NORUG| F
+    F -->|Earn Rewards| I[User Rewards]
+    
+    J[Token Rugs] -->|Submit Claim| K[Claims Verification]
+    K -->|Verified for pump.fun Tokens| L[Payout from Insurance Pool]
+    L -->|Receive $NORUG| I
+    
+    G -->|20% Premiums| M[Lottery Raffles]
+    M -->|Win Prizes| I
+    
+    H -->|Periodic Buyback| N[Buyback & Burn]
+    N -->|Reduce $NORUG Supply| O[Increased Token Value]
