@@ -44,10 +44,10 @@ This repository contains the **Anchor program** for the protocol.
 
 Below is a flowchart illustrating how the NoRug Protocol operates, including token migration, insurance, staking, claims, lottery, and buyback mechanisms.
 
-```mermaid
+
 graph TD
     A[User with pump.fun Tokens] -->|Swap Tokens| B[Migration Process]
-    B -->|1:1 Ratio + 10% Bonus (First 48h)| C[$NORUG Tokens]
+    B -->|1:1 Ratio + 10pct Bonus First 48h| C[$NORUG Tokens]
     B -->|Legacy Tokens| D[PDA Burn Vault]
     
     C -->|Buy Insurance| E[Insurance Pool]
@@ -62,7 +62,7 @@ graph TD
     K -->|Verified for pump.fun Tokens| L[Payout from Insurance Pool]
     L -->|Receive $NORUG| I
     
-    G -->|20% Premiums| M[Lottery Raffles]
+    G -->|20pct Premiums| M[Lottery Raffles]
     M -->|Win Prizes| I
     
     H -->|Periodic Buyback| N[Buyback & Burn]
