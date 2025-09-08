@@ -151,4 +151,85 @@ The migration ensures RUGME holders seamlessly transition to the NoRug ecosystem
 
 ### 4.3 Token Distribution
 
-Premiums are allocated
+Premiums are allocated to:
+- **Insurance Pool**: Funds claims.
+- **Staking Pool**: Rewards stakers.
+- **Lottery Pool**: Finances prizes (minimum 100 $NORUG).
+- **Buyback Pool**: Supports token burns.
+
+Percentages are set by governance (e.g., 40% insurance, 30% staking, 20% lottery, 10% buyback).
+
+### 4.4 Buyback and Burn
+
+Premiums fund $NORUG repurchasing, burned to reduce supply, enhancing value stability.
+
+---
+
+## 5. Security and Scalability
+
+### 5.1 Security
+
+- **Anchor Framework**: Audited smart contracts.
+- **Governance**: Decentralized decision-making.
+- **Oracles**: Trusted data from Pyth and Chainlink VRF.
+- **Risk Checks**: Blocks high-risk tokens (score ≥90).
+
+### 5.2 Scalability
+
+- **Solana**: High throughput, low costs.
+- **Modular Design**: Easy upgrades via Anchor.
+
+---
+
+## 6. Use Case: RUGME Token
+
+A user with RUGME tokens can:
+1. **Migrate to $NORUG**: Swap RUGME 1:1 for $NORUG or receive via airdrop, with a 10% bonus if done within 2 days.
+2. **Analyze Risk**: Check RUGME’s risk score via the Rug Pull Checker.
+3. **Purchase Insurance**: Insure tokens with $NORUG premiums.
+4. **Stake $NORUG**: Earn rewards (minimum 100 $NORUG).
+5. **Join Lotteries**: Participate in prize draws.
+6. **Vote**: Influence claims and protocol upgrades.
+
+If RUGME is rugged (e.g., liquidity <1,000 USDC), users file claims, verified by governance.
+
+---
+
+## 7. Roadmap
+
+The NoRug Protocol development is planned across multiple phases, as illustrated in the following Gantt chart:
+
+```mermaid
+gantt
+    title NoRug Protocol Roadmap (2025–2026)
+    dateFormat  YYYY-MM
+    axisFormat  %Y-Q%q
+
+    section Q1 2025
+    Launch Rug Pull Checker         :done, 2025-01, 3mo
+    Initial $NORUG Token Distribution:done, 2025-01, 3mo
+    RUGME to $NORUG Migration       :done, 2025-01, 7d
+
+    section Q2 2025
+    Deploy Insurance Functionality  :done, 2025-04, 3mo
+    Deploy Staking Functionality    :done, 2025-04, 3mo
+
+    section Q3 2025
+    Launch Community Lotteries      :active, 2025-07, 3mo
+    Public Beta of Lottery System   :2025-07, 2mo
+    Integrate Lottery Governance Tools:2025-08, 2mo
+
+    section Q4 2025
+    Implement Buyback and Burn      :2025-10, 3mo
+    Expand Governance Features      :2025-10, 3mo
+    Conduct Smart Contract Audit    :2025-11, 2mo
+
+    section Q1 2026
+    Integrate Additional Oracles     :2026-01, 3mo
+    Enhance Rug Pull Checker with AI:2026-01, 3mo
+    Launch NoRug Mobile App         :2026-02, 2mo
+
+    section Q2 2026
+    Cross-Chain Risk Analysis Support:2026-04, 3mo
+    Expand Insurance to Non-Pump.fun Tokens:2026-04, 3mo
+    Community-Driven Risk Oracle Improvements:2026-05, 2mo
