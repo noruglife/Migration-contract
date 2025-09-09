@@ -1,6 +1,6 @@
 # NoRug Protocol
 
-![NoRug Protocol Logo](https://www.norug.life/logo.png)
+![NoRug Protocol Logo](https://i.ibb.co/3YTfWhnD/88-C26570-A90-B-4073-B87-D-0396-FDE0-C195.png)
 
 ## Overview
 The NoRug Protocol is a decentralized platform on Solana that protects users from rug pulls, particularly for tokens launched on Pump.fun. It offers insurance policies, staking rewards, community-governed lotteries, and token buybacks, with advanced rug pull risk analysis powered by on-chain metrics and oracles. The protocol incentivizes participation through $NORUG token rewards and ensures fairness via decentralized governance.
